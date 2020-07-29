@@ -1,9 +1,9 @@
 var hat = require('hat')
-var http = require('http')
+var http = require('https')
 var nodeStatic = require('node-static')
 var ws = require('ws')
 
-var PORT = process.argv[2] || 4000
+var PORT = process.argv[2] || 3001
 
 var httpServer = http.createServer()
 var staticServer = new nodeStatic.Server('./public')
